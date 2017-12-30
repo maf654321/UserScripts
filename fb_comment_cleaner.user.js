@@ -23,7 +23,7 @@ function cleanComments() {
         var isValid = false;
         var contents = body.children;
         
-        for (var i = 0; i < contents.length; i++) {
+            for (var i = 0; i < contents.length && !isValid; i++) {
             var element = contents[i];
             var name = element.tagName;
             var cls = element.className;
